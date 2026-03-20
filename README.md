@@ -24,8 +24,6 @@ This is useful because real-world questions are rarely simple. They often requir
 - Multi-step reasoning
 - Domain expertise synthesis
 
-## How does it work?
-
 ### High-Level Flow
 
 ```
@@ -180,8 +178,6 @@ query-optimizer-rag/
     └── example_queries.txt
 ```
 
-## Understanding the Code (No Prior Knowledge Required)
-
 ### What is an Embedding?
 
 Think of it like a fingerprint for text:
@@ -283,20 +279,6 @@ Run specific tests:
 pytest tests/test_decomposer.py -v
 pytest tests/test_retriever.py -v
 ```
-
-## Common Issues & Solutions
-
-**Q: "ANTHROPIC_API_KEY not found"**  
-A: Create `.env` file with your API key. See Quick Start section.
-
-**Q: "No documents found"**  
-A: Ensure documents are in `data/documents/` and run `python src/indexing.py`
-
-**Q: "Very slow queries"**  
-A: Reduce `TOP_K` in settings.py, or use smaller embedding model
-
-**Q: "Poor quality answers"**  
-A: Add more documents to knowledge base, or refine document preprocessing
 
 ## Performance Tips
 
